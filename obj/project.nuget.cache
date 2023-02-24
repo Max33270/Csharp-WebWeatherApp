@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "VNTobuVHe+wikbEL0kAoZKTXcLLtriO+zf8FJ0ggmOuH9bBtE4D8QL7MT4/Yth/CFAEpRNVlJDcUlmM3M4+2qQ==",
+  "success": true,
+  "projectFilePath": "/Users/maxdoublait/Desktop/YNOV B2/C#/Projet_Meteo/Projet_Meteo.csproj",
+  "expectedPackageFiles": [
+    "/Users/maxdoublait/.nuget/packages/atksharp/3.24.24.38/atksharp.3.24.24.38.nupkg.sha512",
+    "/Users/maxdoublait/.nuget/packages/cairosharp/3.24.24.38/cairosharp.3.24.24.38.nupkg.sha512",
+    "/Users/maxdoublait/.nuget/packages/gdksharp/3.24.24.38/gdksharp.3.24.24.38.nupkg.sha512",
+    "/Users/maxdoublait/.nuget/packages/giosharp/3.24.24.38/giosharp.3.24.24.38.nupkg.sha512",
+    "/Users/maxdoublait/.nuget/packages/glibsharp/3.24.24.38/glibsharp.3.24.24.38.nupkg.sha512",
+    "/Users/maxdoublait/.nuget/packages/gtksharp/3.24.24.38/gtksharp.3.24.24.38.nupkg.sha512",
+    "/Users/maxdoublait/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/maxdoublait/.nuget/packages/pangosharp/3.24.24.38/pangosharp.3.24.24.38.nupkg.sha512"
+  ],
+  "logs": []
+}

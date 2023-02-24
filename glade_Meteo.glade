@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="window">
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkStack" id="Forecast">
+            <property name="width-request">800</property>
+            <property name="height-request">520</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkFixed" id="weather">
+                <property name="width-request">1076</property>
+                <property name="height-request">542</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkSearchEntry" id="searchBar_weather">
+                    <property name="width-request">100</property>
+                    <property name="height-request">39</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="width-chars">86</property>
+                    <property name="primary-icon-name">edit-find-symbolic</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-sensitive">False</property>
+                  </object>
+                  <packing>
+                    <property name="x">272</property>
+                    <property name="y">15</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="city">
+                    <property name="width-request">100</property>
+                    <property name="height-request">60</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans 23"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">452</property>
+                    <property name="y">173</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="latitude_longitude">
+                    <property name="width-request">100</property>
+                    <property name="height-request">43</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="x">921</property>
+                    <property name="y">498</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="description">
+                    <property name="width-request">125</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans 16"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">443</property>
+                    <property name="y">295</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="humidity">
+                    <property name="width-request">85</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans 13"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">605</property>
+                    <property name="y">213</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="img">
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="stock">gtk-missing-image</property>
+                  </object>
+                  <packing>
+                    <property name="x">347</property>
+                    <property name="y">150</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="button">
+                    <property name="label" translatable="yes">Search</property>
+                    <property name="width-request">89</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">900</property>
+                    <property name="y">15</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="error">
+                    <property name="width-request">500</property>
+                    <property name="height-request">39</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="x">272</property>
+                    <property name="y">55</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="temp">
+                    <property name="label" translatable="yes">
+</property>
+                    <property name="width-request">85</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">605</property>
+                    <property name="y">160</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="name">weather</property>
+                <property name="title" translatable="yes">Weather</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="forecast">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <!-- n-columns=5 n-rows=1 -->
+                  <object class="GtkGrid">
+                    <property name="width-request">1076</property>
+                    <property name="height-request">542</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="row-homogeneous">True</property>
+                    <property name="column-homogeneous">True</property>
+                    <child>
+                      <object class="GtkFixed">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkImage" id="img1">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="stock">gtk-missing-image</property>
+                          </object>
+                          <packing>
+                            <property name="x">16</property>
+                            <property name="y">101</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="temp1">
+                            <property name="width-request">93</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">115</property>
+                            <property name="y">84</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="date1">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">50</property>
+                            <property name="y">302</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="desc1">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">58</property>
+                            <property name="y">205</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="humidity1">
+                            <property name="width-request">93</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">115</property>
+                            <property name="y">130</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkFixed">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkImage" id="img2">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="stock">gtk-missing-image</property>
+                          </object>
+                          <packing>
+                            <property name="x">16</property>
+                            <property name="y">101</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="temp2">
+                            <property name="width-request">93</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">115</property>
+                            <property name="y">84</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="date2">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">50</property>
+                            <property name="y">302</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="desc2">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">58</property>
+                            <property name="y">205</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="humidity2">
+                            <property name="width-request">93</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">115</property>
+                            <property name="y">130</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkFixed">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkImage" id="img3">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="stock">gtk-missing-image</property>
+                          </object>
+                          <packing>
+                            <property name="x">16</property>
+                            <property name="y">101</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="temp3">
+                            <property name="width-request">93</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">115</property>
+                            <property name="y">84</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="date3">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">50</property>
+                            <property name="y">302</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="desc3">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">58</property>
+                            <property name="y">205</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="humidity3">
+                            <property name="width-request">93</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">115</property>
+                            <property name="y">130</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="city1">
+                            <property name="width-request">165</property>
+                            <property name="height-request">60</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">27</property>
+                            <property name="y">10</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left-attach">2</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkFixed">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkImage" id="img4">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="stock">gtk-missing-image</property>
+                          </object>
+                          <packing>
+                            <property name="x">16</property>
+                            <property name="y">101</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="temp4">
+                            <property name="width-request">93</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">115</property>
+                            <property name="y">84</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="date4">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">50</property>
+                            <property name="y">302</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="desc4">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">58</property>
+                            <property name="y">205</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="humidity4">
+                            <property name="width-request">93</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">115</property>
+                            <property name="y">130</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left-attach">3</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkFixed">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkImage" id="img5">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="stock">gtk-missing-image</property>
+                          </object>
+                          <packing>
+                            <property name="x">16</property>
+                            <property name="y">101</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="temp5">
+                            <property name="width-request">93</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">115</property>
+                            <property name="y">84</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="date5">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">50</property>
+                            <property name="y">302</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="desc5">
+                            <property name="width-request">100</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">58</property>
+                            <property name="y">205</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="humidity5">
+                            <property name="width-request">93</property>
+                            <property name="height-request">80</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans 13"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="x">115</property>
+                            <property name="y">130</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left-attach">4</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="name">forecast</property>
+                <property name="title" translatable="yes">Forecast</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="settings">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkLabel" id="default_city">
+                    <property name="name">default_city</property>
+                    <property name="width-request">339</property>
+                    <property name="height-request">56</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Default City : None</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans 13"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">175</property>
+                    <property name="y">70</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="button_settings">
+                    <property name="label" translatable="yes">Confirm</property>
+                    <property name="width-request">93</property>
+                    <property name="height-request">49</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">515</property>
+                    <property name="y">150</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSearchEntry" id="searchBar_settings">
+                    <property name="width-request">300</property>
+                    <property name="height-request">35</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="primary-icon-name">edit-find-symbolic</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="primary-icon-sensitive">False</property>
+                  </object>
+                  <packing>
+                    <property name="x">192</property>
+                    <property name="y">156</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="button_reset_default_city">
+                    <property name="label" translatable="yes">Reset</property>
+                    <property name="width-request">93</property>
+                    <property name="height-request">49</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">515</property>
+                    <property name="y">70</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="error_settings">
+                    <property name="width-request">290</property>
+                    <property name="height-request">35</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="x">192</property>
+                    <property name="y">195</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="name">settings</property>
+                <property name="title" translatable="yes">Settings</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="y">50</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkStackSwitcher" id="tabsBar">
+            <property name="name">Paramètres</property>
+            <property name="width-request">1076</property>
+            <property name="height-request">52</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="homogeneous">True</property>
+            <property name="stack">Forecast</property>
+            <style>
+              <class name="gnt"/>
+            </style>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
